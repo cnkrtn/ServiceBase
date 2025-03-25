@@ -13,10 +13,18 @@ MonoBehaviour:
   m_Name: UIs
   m_EditorClassIdentifier: 
   m_GroupName: UIs
-  m_Data:
-    m_SerializedData: []
   m_GUID: 8e7314db99a2632439073467fafd36d0
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: aced19312c044e641aa75e3857a54518
+    m_Address: UIMainMenu
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b0c96d6597a18354e9c04781ec584d7a
+    m_Address: UISettings
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 6e690e8418247f742838a361be5bff98, type: 2}
   m_SchemaSet:

@@ -12,6 +12,7 @@ using Core.SceneLoaderService.Interface;
 using Core.SceneLoaderService.Keys;
 using Core.SceneLoaderService.Service;
 using Core.UIService.Interface;
+using Core.UIService.Keys;
 using Core.UIService.Service;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -72,7 +73,8 @@ public class ReferenceLocator : MonoBehaviour
     private async void StartGame()
     {
         await _sceneLoaderService.LoadScene(SceneKeys.KEY_MAIN_MENU_SCENE);
-        _audioService.PlayMusic(AudioKeys.KEY_MAIN_MUSIC, 1000);
+        await _uiService.ShowScreen(UIKeys.KEY_MAIN_MENU_UI);
+      //  _audioService.PlayMusic(AudioKeys.KEY_MAIN_MUSIC, 1000);
     }
 
     private void Update()
